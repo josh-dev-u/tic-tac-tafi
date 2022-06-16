@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* vertical/horizontal cross through lines */
+#vertical-horizontal-lines {
+    position: absolute;
+    transition-duration: .5s;
+}
+
+/* diagonal cross through lines */
+#right-diagonal-line {
+    width: 550px;
+    height: 650px;
+    transform: rotateZ(45deg) translate(-50%);
+    position: absolute;
+    /* left: 225px; */
+    border-right: 2px solid gold;
+    display: none;
+}
+
+#left-diagonal-line {
+    width: 550px;
+    height: 650px;
+    transform: rotateZ(-45deg) translate(-50%);
+    position: absolute;
+    /* left: 225px; */
+    border-right: 2px solid gold;
+    display: none;
+}
+
+/* end game notification */
+#game-notification {
+    z-index: 10;
+    position: fixed;
+    width: 600px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: -700px;
+    display: hidden;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#game-notification-text {
+    font-size: 30px;
+    width: 100%;
+}
+
+#restart-button {
+    width: 100px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.game-title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px 40px 0px;
+}
+
+.game-title {
+    font-size: 32px;
+}
+
+
+/* main game container */
+.game-container {
+    width: 600px;
+    height: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* game tiles */
+
+.tile {
+    width: 33.1%;
+    height: 33.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid blue; */
+    /* background-color: black; */
+}
+
+#top-left {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#top-mid {
+    border-bottom: 1px solid black;
+}
+
+#top-right {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#mid-left {
+   border-right: 1px solid black; 
+}
+
+/* #mid-mid {
+
+} */
+
+#mid-right {
+    border-left: 1px solid black;
+}
+
+#bottom-left {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#bottom-mid {
+    border-top: 1px solid black;
+}
+
+#bottom-right {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* tile canvases */
+
+.tile-canvas {
+    /* border: 1px solid black; */
+    transition-duration: 5s;
+}

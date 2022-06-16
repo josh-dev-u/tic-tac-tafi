@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Tafi</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+
+        <div id="game-notification">
+            <p id="game-notification-text"></p>
+            <div id="restart-button">Play Again</div>
+        </div>
+
+        <div class="game-title-container">
+            <p class="game-title">Tic-Tac-Tafi</p>
+        </div>
+
+        <div class="game-container">
+            <!-- absolute cross through lines -->
+            <div id="vertical-horizontal-lines"></div>
+            <div id="right-diagonal-line"></div>
+            <div id="left-diagonal-line"></div>
+
+            <!-- game tiles -->
+            <div class="tile" id="top-left">
+                <canvas class="tile-canvas" id="top-left-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="top-mid">
+                <canvas class="tile-canvas" id="top-mid-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="top-right">
+                <canvas class="tile-canvas" id="top-right-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="mid-left">
+                <canvas class="tile-canvas" id="mid-left-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="mid-mid">
+                <canvas class="tile-canvas" id="mid-mid-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="mid-right">
+                <canvas class="tile-canvas" id="mid-right-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="bottom-left">
+                <canvas class="tile-canvas" id="bottom-left-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="bottom-mid">
+                <canvas class="tile-canvas" id="bottom-mid-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+            <div class="tile" id="bottom-right">
+                <canvas class="tile-canvas" id="bottom-right-canvas" width="150px" height="150px"></canvas>
+            </div>
+
+        </div>
+
+        <script src='index.js' type='text/javascript'></script>
+    </body>
+</html>
+    
